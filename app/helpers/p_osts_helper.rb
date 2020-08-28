@@ -1,0 +1,2 @@
+module POstsHelper
+end
