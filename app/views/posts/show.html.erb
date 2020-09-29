@@ -1,8 +1,15 @@
 <p id="notice"><%= notice %></p>
 
+<!-- Existing post title code here -->
 <p>
   <strong>Title:</strong>
   <%= @post.title %>
+</p>
+
+<!-- Add a new HTML paragraph tag... -->
+<p>
+  <!-- With the post body embedded inside. -->
+  <%= @post.body %>
 </p>
 
 <%= link_to 'Edit', edit_post_path(@post) %> |
