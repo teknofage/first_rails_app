@@ -5,6 +5,18 @@
       <%= f.label :title %>
       <%= f.text_field :title %>
     </div>
+
+    <!-- Publication Date field -->
+    <div class="field">
+      <%= f.label :pub_date %>
+      <%= f.text_field :pub_date %>
+    </div>
+
+    <!-- Image field -->
+    <div class="field">
+      <%= f.label :image %>
+      <%= f.text_field :image %>
+    </div>
   
     <!-- Create a new div element to hold body -->
     <div class="field">
@@ -14,6 +26,26 @@
       <!-- Using text_area instead of text_field
       <!-- makes it bigger -->
       <%= f.text_area :body %>
+    </div>
+
+    <!-- Comments -->
+    <div class="field">
+      <!-- The label that appears next to field -->
+      <%= f.label :comments %>
+      <!-- The field itself -->
+      <!-- Using text_area instead of text_field
+      <!-- makes it bigger -->
+      <%= f.text_area :comments %>
+    </div>
+
+    <!-- Post Comment -->
+    <div class="field">
+      <!-- The label that appears next to field -->
+      <%= f.label :post_comment %>
+      <!-- The field itself -->
+      <!-- Using text_area instead of text_field
+      <!-- makes it bigger -->
+      <%= f.text_area :post_comment %>
     </div>
   
     <div class="actions">

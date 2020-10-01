@@ -1,5 +1,11 @@
 <p id="notice"><%= notice %></p>
 
+<!-- Add a new HTML paragraph tag... -->
+<p>
+  <!-- With the date_pub embedded inside. -->
+  <%= @post.date_pub %>
+</p>
+
 <!-- Existing post title code here -->
 <p>
   <strong>Title:</strong>
@@ -8,8 +14,26 @@
 
 <!-- Add a new HTML paragraph tag... -->
 <p>
+  <!-- With the post image embedded inside. -->
+  <%= @post.image %>
+</p>
+
+<!-- Add a new HTML paragraph tag... -->
+<p>
   <!-- With the post body embedded inside. -->
   <%= @post.body %>
+</p>
+
+<!-- Add a new HTML paragraph tag... -->
+<p>
+  <!-- With the comments embedded inside. -->
+  <%= @post.comments %>
+</p>
+
+<!-- Add a new HTML paragraph tag... -->
+<p>
+  <!-- With the post_comment embedded inside. -->
+  <%= @post.post_comment %>
 </p>
 
 <%= link_to 'Edit', edit_post_path(@post) %> |
